@@ -47,10 +47,10 @@ class Posts extends Component
     }
     public function edit($id)
     {
-        $student = Student::findOrFail($id);
+        $posts = Post::findOrFail($id);
         $this->post_id = $id;
-        $this->title = $post->title;
-        $this->body = $post->body;
+        $this->title = $posts->title;
+        $this->body = $posts->body;
     
     
         $this->openModalPopover();
