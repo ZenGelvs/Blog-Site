@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Livewire\Crud;
+use App\Http\Livewire\Posts;
+use App\Http\Livewire\Students;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('students', Crud::class);
+Route::get('students', Students::class);
+
+Route::get('posts', Posts::class);
 
 Route::get('/', function () {
     return view('welcome');

@@ -3,7 +3,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Student;
 
-class Crud extends Component
+class Students extends Component
 {
     public $students, $name, $email, $mobile, $student_id;
     public $isModalOpen = 0;
@@ -62,6 +62,6 @@ class Crud extends Component
     public function delete($id)
     {
         Student::find($id)->delete();
-        session()->flash('message', 'Studen deleted.');
+        session()->flash('message', 'Student deleted.');
     }
 }

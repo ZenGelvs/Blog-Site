@@ -1,5 +1,5 @@
 <x-slot name="header">
-    <h2 class="text-center">Create Students</h2>
+    <h2 class="text-center">Create Posts</h2>
 </x-slot>
 <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -16,32 +16,30 @@
             @endif
             <button wire:click="create()"
                 class="my-4 inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-red-600 text-base font-bold text-white shadow-sm hover:bg-red-700">
-                Create a Student
+                Create a Post
             </button>
             @if($isModalOpen)
-            @include('livewire.createStudents')
+            @include('livewire.createPosts')
             @endif
             <table class="table-fixed w-full">
                 <thead>
                     <tr class="bg-gray-100">
                         <th class="px-4 py-2 w-20">No.</th>
-                        <th class="px-4 py-2">Name</th>
-                        <th class="px-4 py-2">Email</th>
-                        <th class="px-4 py-2">Mobile</th>
+                        <th class="px-4 py-2">Title</th>
+                        <th class="px-4 py-2">Body</th>
                         <th class="px-4 py-2">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($students as $student)
+                    @foreach($posts as $post)
                     <tr>
-                        <td class="border px-4 py-2">{{ $student->id }}</td>
-                        <td class="border px-4 py-2">{{ $student->name }}</td>
-                        <td class="border px-4 py-2">{{ $student->email}}</td>
-                        <td class="border px-4 py-2">{{ $student->mobile}}</td>
+                        <td class="border px-4 py-2">{{ $post->id }}</td>
+                        <td class="border px-4 py-2">{{ $post->title }}</td>
+                        <td class="border px-4 py-2">{{ $post->body}}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $student->id }})"
+                            <button wire:click="edit({{ $post->id }})"
                                 class="flex px-4 py-2 bg-gray-500 text-gray-900 cursor-pointer">Edit</button> <br>
-                            <button wire:click="delete({{ $student->id }})"
+                            <button wire:click="delete({{ $post->id }})"
                                 class="flex px-4 py-2 bg-red-100 text-gray-900 cursor-pointer">Delete</button>
                         </td>
                     </tr>
