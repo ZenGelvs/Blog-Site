@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Products;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('products', Products::class)->middleware('auth');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,9 +23,11 @@ Route::get('/', function () {
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified'
+    'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 });
+
+
