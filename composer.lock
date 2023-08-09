@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da114f946497487eade6cd2756898b4b",
+    "content-hash": "7cad8d104ede04b5ff51414028efe7d8",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1479,22 +1479,22 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v3.2.5",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "51a9ebf97839d2ae6e39ec8eb22b0555b1db20e3"
+                "reference": "d356a6cf9bc0864bdca069a8df53067e43a7bb6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/51a9ebf97839d2ae6e39ec8eb22b0555b1db20e3",
-                "reference": "51a9ebf97839d2ae6e39ec8eb22b0555b1db20e3",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/d356a6cf9bc0864bdca069a8df53067e43a7bb6c",
+                "reference": "d356a6cf9bc0864bdca069a8df53067e43a7bb6c",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/console": "^10.0",
-                "illuminate/support": "^10.0",
+                "illuminate/console": "^10.17",
+                "illuminate/support": "^10.17",
                 "jenssegers/agent": "^2.6",
                 "laravel/fortify": "^1.15",
                 "php": "^8.1.0"
@@ -1544,7 +1544,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2023-07-13T13:20:19+00:00"
+            "time": "2023-08-08T14:05:45+00:00"
         },
         {
             "name": "laravel/prompts",
