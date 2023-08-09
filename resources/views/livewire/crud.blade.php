@@ -40,7 +40,7 @@
                         <td class="border px-4 py-2">{{ $student->mobile}}</td>
                         <td class="border px-4 py-2">
                             <button wire:click="edit({{ $student->id }})"
-                                class="flex px-4 py-2 bg-gray-500 text-gray-900 cursor-pointer">Edit</button> 
+                                class="flex px-4 py-2 bg-gray-500 text-gray-900 cursor-pointer">Edit</button> <br>
                             <button wire:click="delete({{ $student->id }})"
                                 class="flex px-4 py-2 bg-red-100 text-gray-900 cursor-pointer">Delete</button>
                         </td>

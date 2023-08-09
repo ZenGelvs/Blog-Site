@@ -35,8 +35,8 @@ class Crud extends Component
     {
         $this->validate([
             'name' => 'required',
-            'email' => 'required',
-            'mobile' => 'required',
+            'email' => ['required', 'email', 'max:50'],
+            'mobile' => ['required', 'int',],
         ]);
     
         Student::updateOrCreate(['id' => $this->student_id], [
